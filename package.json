@@ -1,0 +1,31 @@
+{
+  "name": "codingpj",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack-dev-server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.5",
+    "react": "^18.3.1",
+    "react-beautiful-dnd": "^13.1.1",
+    "react-dom": "^18.3.1",
+    "styled-components": "^6.1.11"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.24.7",
+    "@babel/preset-react": "^7.24.7",
+    "babel-loader": "^9.1.3",
+    "html-loader": "^5.0.0",
+    "html-webpack-plugin": "^5.6.0",
+    "webpack": "^5.92.1",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.0.4"
+  }
+}

@@ -29,7 +29,6 @@ const Task = ({ task, index, invalidDrag, isSelected, toggleSelection }) => {
         >
           <TaskTitle>{truncate(task.content.taskTitle, 18)}</TaskTitle>
           <TaskExplanation>{task.content.explanation}</TaskExplanation>
-          {console.log(invalidDrag)}
         </Container>
       )}
     </Draggable>

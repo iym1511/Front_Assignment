@@ -1,6 +1,6 @@
 import React from "react";
-import Todo from "./components/Todo";
 import { createGlobalStyle, ThemeProvider } from "styled-components";
+import Main from "./components/Main";
 
 const GlobalStyle = createGlobalStyle`
   * {
@@ -24,7 +24,7 @@ const App = () => {
     <ThemeProvider theme={{}}>
       <GlobalStyle />
       <div>
-        <Todo />
+        <Main />
       </div>
     </ThemeProvider>
   );

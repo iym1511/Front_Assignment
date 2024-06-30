@@ -5,7 +5,7 @@ import Column from "./Column";
 import initialData from "../../initialData";
 import { keyframes } from "@emotion/react";
 
-const Todo = () => {
+const Main = () => {
   const [data, setData] = useState(initialData); // 초기 데이터 상태
   const [selectedTaskIds, setSelectedTaskIds] = useState([]); // 선택된 태스크 ID 배열 상태
   const [draggingTaskId, setDraggingTaskId] = useState(null); // 드래깅 중인 태스크 ID 상태
@@ -237,7 +237,7 @@ const Todo = () => {
   );
 };
 
-export default Todo;
+export default Main;
 
 const Container = styled.div`
   display: flex;

@@ -53,7 +53,6 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: 'index.html', // 기본 HTML 템플릿 파일
-      favicon: './src/favicon.ico', // favicon 설정 (옵션)
     }),
   ],
   devServer: {

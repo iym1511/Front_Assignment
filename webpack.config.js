@@ -9,8 +9,6 @@ module.exports = {
     extensions: ['.js', '.jsx'], // entry.app에 불러올 파일 확장자 지정
   },
   output: {
-    // __dirname: 현재 파일 경로
-    // path.join(a, b): a 경로에 b 폴더 생성 후 경로 반환
     path: path.join(__dirname, 'dist'),
     filename: 'app.js',
   },
@@ -37,11 +35,25 @@ module.exports = {
           },
         ],
       },
+      {
+        test: /\.(png|jpe?g|gif|svg)$/i,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: 'img/', // 이미지 파일이 저장될 경로
+              publicPath: 'img/'   // 웹 페이지에서 접근할 경로
+            },
+          },
+        ],
+      },
     ],
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: 'index.html',
+      template: 'index.html', // 기본 HTML 템플릿 파일
+      favicon: './src/favicon.ico', // favicon 설정 (옵션)
     }),
   ],
   devServer: {

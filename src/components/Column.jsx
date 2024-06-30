@@ -36,22 +36,27 @@ const Column = ({ column, tasks, draggingTaskId, invalidDrag, selectedTaskIds, t
 export default Column;
 
 const Container = styled.div`
-  margin: 8px;
-  border: 1px solid lightgrey;
-  border-radius: 2px;
-  width: 210px;
-  height: max-content;
   display: flex;
   flex-direction: column;
-`;
+  border-radius: 2px;
+  width: 290px;
+  height: max-content;
+  margin: 10px;
+  `;
 
 const Title = styled.h3`
-  padding: 8px;
+  padding: 18px 25px 10px;
+  font-weight: lighter;
+  color: #5f5f5f;
   margin-bottom: 0;
-  background-color: ${(props) => (props.isDragging ? "lightgreen" : "white")};
-`;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  background-color: ${(props) => (props.isDragging ? "lightgreen" : "RGB(224, 227, 235)")};
+  `;
 
 const TaskList = styled.div`
   padding: 8px;
-  background-color: ${(props) => (props.isDraggingOver ? "skyblue" : "white")};
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: ${(props) => (props.isDraggingOver ? "skyblue" : "RGB(224, 227, 235)")};
 `;

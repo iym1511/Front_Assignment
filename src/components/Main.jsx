@@ -21,7 +21,6 @@ const Main = () => {
       }
       // 현재 드래깅 중인 태스크 ID 설정
       setDraggingTaskId(id);
-      console.log(start);
     },
     [selectedTaskIds]
   );
@@ -162,7 +161,6 @@ const Main = () => {
 
         setData(newData);
       }
-      console.log("뉴 데이터 : ", data);
       // 선택된 태스크 초기화
       setSelectedTaskIds([]);
     },
